@@ -1,0 +1,56 @@
+body {
+	background: $background-color;
+	font-family: 'Tasse-Regular', Helvetica;
+
+}
+
+#window {
+	height: 1136px * $scale;
+	width: 640px * $scale;
+	margin: 0 auto;
+	// position: absolute;
+	// top: 50%;
+	// left: 50%;
+	// transform: translate(-50%,-50%);
+	outline: 1px solid rgba($white, .3);
+	box-shadow: 0px 0px 75px rgba($black, .4);
+	background: url('../image1.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	&:hover {
+		background: none;
+	}
+
+	header {
+		height: calc( ( 203/1136 * 100% ) - (4px * #{$scale}));
+		width: 100%;
+		border-bottom: 4px * $scale solid $white;
+	}
+
+	.playable {
+		height: calc( 819/1136 * 100% );
+		width: 100%;
+	}
+
+	footer {
+		height: calc( ( 114/1136 * 100% ) - (4px * #{$scale}) );
+		width: 100%;
+		border-top: 4px * $scale solid $white;
+	}
+
+	.row {
+		height: 87px;
+		width: 637px;
+		margin: 4px 0 2px 2px;
+
+		.block {
+			height: 87px;
+			width: 87px;
+			margin: 0 2px;
+			//background: rgba(255,255,255,.2);
+			float: left;
+		}
+
+	}
+}
