@@ -74,48 +74,59 @@ body {
 }
 
 /* line 7, ../sass/config/_structure.scss */
+#debug, #buttons {
+  width: calc( ( 100vw - 640px) / 2 );
+  float: left;
+  min-height: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* line 15, ../sass/config/_structure.scss */
 #window {
   height: 1136px;
   width: 640px;
   margin: 0 auto;
+  float: left;
   outline: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 75px rgba(10, 10, 10, 0.4);
   background: url("../image1.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
-/* line 21, ../sass/config/_structure.scss */
+/* line 26, ../sass/config/_structure.scss */
 #window:hover {
   background: none;
 }
-/* line 25, ../sass/config/_structure.scss */
+/* line 30, ../sass/config/_structure.scss */
 #window header {
   height: calc( ( 203/1136 * 100% ) - (4px * 1));
   width: 100%;
   border-bottom: 4px solid #ffffff;
 }
-/* line 31, ../sass/config/_structure.scss */
+/* line 36, ../sass/config/_structure.scss */
 #window .playable {
   height: calc( 819/1136 * 100% );
   width: 100%;
 }
-/* line 36, ../sass/config/_structure.scss */
+/* line 41, ../sass/config/_structure.scss */
 #window footer {
   height: calc( ( 114/1136 * 100% ) - (4px * 1) );
   width: 100%;
   border-top: 4px solid #ffffff;
 }
-/* line 42, ../sass/config/_structure.scss */
+/* line 47, ../sass/config/_structure.scss */
 #window .row {
   height: 87px;
   width: 637px;
   margin: 4px 0 2px 2px;
 }
-/* line 47, ../sass/config/_structure.scss */
+/* line 52, ../sass/config/_structure.scss */
 #window .row .block {
   height: 87px;
   width: 87px;
   margin: 0 2px;
+  background: rgba(255, 255, 255, 0.2);
   float: left;
 }
 

@@ -4,102 +4,46 @@
 	<title>One More Brick</title>
 
 	<link href="stylesheets/app.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js" />
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/gameplay.js"></script>
 
 </head>
 <body>
 
+	<div id="debug"></div>
+
 	<div id="window">
 		
 		<header></header>
+
 		<div class="playable">
 			
-			<div class="row">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-			</div>
-			<div class="row">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-			</div>
-			<div class="row">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-			</div>
-			<div class="row">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-			</div>
-			<div class="row">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-			</div>
-			<div class="row">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-			</div>
-			<div class="row">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-			</div>
-			<div class="row">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-			</div>
-			<div class="row">
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
-				<div class="block"></div>
+			<div class="empty row"></div>
+
+			<div class="game">
+
+				<!-- .row 7 > .block 7 -->
+				<div class="row">
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+				</div>
 			</div>
 
-
+			<div class="dead row"></div>
 
 		</div>
 		<footer></footer>
+
+	</div>
+
+	<div id="buttons">
+
+		<button class="generate">Generate Row</button>
 
 	</div>
 	
